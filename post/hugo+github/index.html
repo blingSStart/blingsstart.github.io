@@ -1,0 +1,282 @@
+  <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> Hugo&#43;GitHub入门 &middot; xing&#39;s Blog </title>
+    
+    <link rel="stylesheet" type="text/css" href="https://blingsstart.github.io/css/uno.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://blingsstart.github.io/css/lightGallery.css" />
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blingsstart.github.io/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="https://blingsstart.github.io/favicon.ico">
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="xing&#39;s Blog" />
+    
+    <script src="https://blingsstart.github.io/js/jquery.min.js"></script>
+    <script src="https://blingsstart.github.io/js/main.min.js">
+    </script>
+</head>
+
+  <body>
+    <div id="scriptHeader">
+    <span class="mobile btn-mobile-menu">
+            <i class="fa fa-bars btn-mobile-menu__icon"></i>
+            <i class="fa fa-times btn-mobile-close__icon hidden"> </i>
+    </span>
+    <header class="
+        
+            panel-cover panel-cover--collapsed
+        "  style="background-image: url(/images/background-cover.jpg)" >
+    <div class="panel-main">
+        <div class="panel-main__inner panel-inverted">
+            <div class="panel-main__content"> 
+                <h1 class="panel-cover__title panel-title">
+                    <a href="https://blingsstart.github.io/"  title="link to homepage for xing&#39;s Blog">xing&#39;s Blog</a>
+                </h1>
+                <hr class="panel-cover__divider" />
+                <p class="panel-cover__description">  Learning more~~~  </p>
+                <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                <div class="navigation-wrapper">
+                    <nav class="cover-navigation cover-navigation--primary">
+                        <ul class="navigation">
+                            <li class="navigation__item"><a href="https://blingsstart.github.io#blog" title="link to xing&#39;s Blog blog" class="blog-button">Blog</a> </li></br>
+                            
+                            
+                       </ul>
+                    </nav> <nav class="cover-navigation navigation--social">
+    <ul class="navigation">   
+        
+        <li class="navigation__item">
+            <a href="https://github.com/blingsstart" title="blingsstart on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
+        </li>  </br>   
+        
+        <li class="navigation__item">
+            <a href="mailto:busyxxx@126.com" title="Email busyxxx@126.com"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
+        </li>  </ul>
+</nav>
+ </div>
+            </div>
+        </div>
+        <div class="panel-cover--overlay"></div>
+    </div>
+</header>
+</div>
+<noscript>
+    <style>
+        #scriptHeader {display:none;}
+        .navigation-wrapper{
+            display: block;
+            top: 0;
+        }
+    </style>
+
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content"> 
+                    <h1 class="panel-cover__title panel-title">
+                        <a href="https://blingsstart.github.io/"  title="link to homepage for xing&#39;s Blog">xing&#39;s Blog</a>
+                    </h1>
+                    <hr class="panel-cover__divider" />
+                    <p class="panel-cover__description">  Learning more~~~  </p>
+                    <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                    <div class="navigation-wrapper">
+                        <nav class="cover-navigation cover-navigation--primary">
+                            <ul class="navigation">
+                                <li class="navigation__item"><a href="https://blingsstart.github.io/#blog" title="link to xing&#39;s Blog blog" class="blog-button">Blog</a> </li></br>
+                                
+                                
+                           </ul>
+                        </nav> <nav class="cover-navigation navigation--social">
+    <ul class="navigation">   
+        
+        <li class="navigation__item">
+            <a href="https://github.com/blingsstart" title="blingsstart on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
+        </li>  </br>   
+        
+        <li class="navigation__item">
+            <a href="mailto:busyxxx@126.com" title="Email busyxxx@126.com"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
+        </li>  </ul>
+</nav>
+ </div>
+                </div>
+            </div>
+            <div class="panel-cover--overlay"></div>
+        </div>
+    </header>
+</noscript>
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <div class="post">
+          <h1>Hugo&#43;GitHub入门</h1>
+          <span class="post-date">Sun, Dec 1, 2019</span>
+          
+
+<p><a href="https://blingsstart.github.io">在线预览</a></p>
+
+<h2 id="hugo简介">hugo简介</h2>
+
+<h3 id="使用go语言编写的静态站点生成器-注-官网文档-hugo中文网文档-https-gohugo-io-getting-started-configuration">使用Go语言编写的静态站点生成器（注：官网文档 <a href="https://gohugo.io/getting-started/configuration/">hugo中文网文档</a>）</h3>
+
+<p>（本人是小白一个，请大家来指点提携）现在的博客主流框架有很多，比如<strong>hexo</strong>,<strong>docker</strong>也可用来搭建（动态）博客，简单来说一下hugo
+因为本人是贫穷小白所以本文以介绍windows（为主）和linux</p>
+
+<h4 id="优缺点">优缺点</h4>
+
+<blockquote>
+<ul>
+<li>优点</li>
+<li>体积小</li>
+<li>安装步骤简单，适合小白</li>
+<li>操作简单</li>
+<li>运行快</li>
+<li>缺点</li>
+<li>作为一个博客框架，他的主题属实有点少
+当然可能还有其他的优缺点，请教万能的[<strong>百老师</strong>]，今天主要就是谈论一下如何安装hugo，基本配置以及远程发布到github</li>
+</ul>
+</blockquote>
+
+<h4 id="准备工作">准备工作：</h4>
+
+<blockquote>
+<p>1.自行注册github账号，提前安装好git（自行百度，或者等待我下一篇git安装及基本操作，如果是windows以下操作最好在git bash中操作（git bash与linux操作相同），也可以自行下载chocolately，linux下直接命令行即可）
+2.hugo下载（根据电脑系统选择下载方式）
+<img src="https://img-blog.csdnimg.cn/20191129091616418.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" />
++ linux：命令行输入(brew install hugo）验证：hugo version
+windows下载方式<a href="https://github.com/gohugoio/hugo/releases">下载Hugo-releases版本</a>
++ windows：  <a href="https://www.gohugo.org/">hugo中文网</a>上面有更系统的教程（可对比学习），自认为本人写的更加通俗易懂</p>
+</blockquote>
+
+<h4 id="正式工作">正式工作：</h4>
+
+<blockquote>
+<p>3.安装成功后创建一个站点
+ -  hugo new site myblog
+<img src="https://img-blog.csdnimg.cn/20191129092249111.png" alt="具体操作" /></p>
+
+<p>4.查看[ls]当前目录下就会生成一个myblog文件夹目录结构如下
+<img src="https://img-blog.csdnimg.cn/2019112909263317.png" alt="当然ll也可以" />让我们来一起看看文档的结构吧
+<img src="https://img-blog.csdnimg.cn/20191129093750431.png" alt="基本文件描述" /></p>
+
+<p>5.下载主题
+- <a href="https://www.gohugo.org/">hugo中文网</a> 这个网页基本涵盖了hugo的所有内容（英文版是themes）中文版就是皮肤列表，点击进去自选心仪的主题下载
+- 点进喜欢的页面之后，（找到Installation）<strong>cd 到themes目录</strong>下 复制 （举例）git clone <a href="https://github.com/syui/hugo-theme-air">https://github.com/syui/hugo-theme-air</a> 到bash中就会进行下载
+- 下载后查看当前目录的子目录 可以把archetypes整体复制到你创建站点目录下覆盖掉原有的archetypes目录（上面提到过这个目录的作用）
+- 将theme.toml同样复制到你创建站点目录下覆盖掉原有的config.toml(你需要对theme.toml进行重命名)这个就是博客的配置文件
+- 如果不想修改也可以做下面的变更
+config.toml配置：（注意此时是yaml格式需要以- - -开始以- - -结束横杠间可以有空格也可以没有）
+<img src="https://img-blog.csdnimg.cn/20191129094826752.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="config.toml配置" />
+archetypes中的default.md配置（注意这里面使用的是toml格式需要以+++开始+++结束）
+<img src="https://img-blog.csdnimg.cn/20191129095422730.png" alt="" />
+配置的很简便，当然也可以添加配置</p>
+
+<p>6.创建你的第一篇博文
+- 进入到你的博文文件中，hugo new post/博文名.md 下面会弹出创建的目录，细心的小伙伴会发现，其实市创建在content的post目录下的markdown文件
+md文件即为markdown(根据模块内容可以适当创建其他类似post的模块)
+<img src="https://img-blog.csdnimg.cn/20191129095813381.png" alt="在这里插入图片描述" />
+- 在运行博客之前，我们要先确定一件事，在config.toml中确定是否有theme属性，在其后指定为你的下载的主题名（即目录名）
+- 上述操作可以通过toml 进行操作，也可以通过json进行操作，还有一种yaml
+<img src="https://img-blog.csdnimg.cn/20191129100213971.png" alt="在这里插入图片描述" /></p>
+
+<p>7.创建好博文后，需要进行发布
+- 首先通过hugo初始化public
+<img src="https://img-blog.csdnimg.cn/20191129100603142.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" />
+- 发布博客下面会有提示信息端口号为1313 <kdb>hugo server -t 主题名 &ndash;buildDrafts</kdb> 指定主题名进行渲染 buildDrafts强行渲染（如果像我一眼配置了在上面的config.toml配置文件中配置了theme）这里就只需要hugoserver启动即可（如下显示即为开启成功，可以清晰的看到端口为1313访问即可）
+<img src="https://img-blog.csdnimg.cn/20191129100832803.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+
+<p>8.到这里简单的hugo博客就搭建完毕了，当然我们还需要将博客部署到github中
+<img src="https://img-blog.csdnimg.cn/20191129101207194.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" />
+1.进入你的新建的远程库中选择settings 选择github页面类型 即（gitPages）选择用户组即可（默认）用户/组织页面（https://<USERNAME|ORGANIZATION>.github.io/）
+<img src="https://img-blog.csdnimg.cn/20191129101325264.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" />
+选择适合自己的主题即可
+<img src="https://img-blog.csdnimg.cn/20191129101558492.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="" />
+3. 将远程仓库克隆到本地</p>
+
+<pre><code>git clone &lt;YOUR-PROJECT-URL&gt; &amp;&amp; cd &lt;YOUR-PROJECT&gt;
+</code></pre>
+
+<ol>
+<li>将创建好的hugo项目粘贴到本地仓库（即克隆后出现的目录）</li>
+<li>hugo构建项目</li>
+<li>hugo server 启动项目 去网页看一眼满意之后， <kdb>ctrl</kdb>+c停止 将生成的public完全删除（rm -rf public）</li>
+
+<li><p>创建一个git子模块</p>
+
+<pre><code>git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public 
+</code></pre></li>
+
+<li><p>放入脚本deploy.sh（作用就是git添加提交推到远程库中）</p>
+
+<pre><code>#!/bin/sh
+
+# If a command fails then the deploy stops
+set -e
+
+printf &quot;\033[0;32mDeploying updates to GitHub...\033[0m\n&quot;
+
+# Build the project.
+hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`
+
+# Go To Public folder
+cd public
+
+# Add changes to git.
+git add .
+
+# Commit changes.
+msg=&quot;rebuilding site $(date)&quot;
+if [ -n &quot;$*&quot; ]; then
+	msg=&quot;$*&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+</code></pre></li>
+</ol>
+
+<p>9.创建好之后要为该脚本赋予权限chmod+x deploy.sh
+10.直接运行./deploy.sh即可,这样基本一个小型博客就搭建完成
+注：这样只适用于第一次初始化远程部署到GitHub，之后就可以删除粘贴的项目和deploy.sh因为上面添加的子模块是站点文件中的public子文件夹，再次部署时只需要从远程库拉取，在本地编写好博客后，更新即可</p>
+</blockquote>
+
+<h4 id="总结">总结：</h4>
+
+<blockquote>
+<ol>
+<li>需要提前掌握git基本命令喔！！</li>
+</ol>
+</blockquote>
+
+        </div>
+        <div class="sharing">
+<a href="https://twitter.com/intent/tweet?status=Hugo%2bGitHub%e5%85%a5%e9%97%a8-https%3a%2f%2fblingsstart.github.io%2fpost%2fhugo%2bgithub%2f" target="_blank" title="Follow me on Twitter" class="twitter">
+<span class="fa fa-twitter-square fa-3x"></span></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblingsstart.github.io%2fpost%2fhugo%2bgithub%2f" target="_blank" title="Join me on Facebook" class="facebook">
+<span class="fa fa-facebook-square fa-3x"></span></a>
+<a href="https://plus.google.com/share?url=https%3a%2f%2fblingsstart.github.io%2fpost%2fhugo%2bgithub%2f" target="_blank" title="Google+" class="googleplus">
+<span class="fa fa-google-plus-square fa-3x"></span></a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblingsstart.github.io%2fpost%2fhugo%2bgithub%2f&title=Hugo%2bGitHub%e5%85%a5%e9%97%a8" target="_blank" title="LinkedIn" class="linkedin">
+<span class="fa fa-linkedin-square fa-3x"></span></a>
+<a href="http://www.reddit.com/submit?url=https%3a%2f%2fblingsstart.github.io%2fpost%2fhugo%2bgithub%2f" target="_blank" title="Reddit" class="reddit"><span class="fa fa-reddit-square fa-3x"></span></a>
+<a href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fblingsstart.github.io%2fpost%2fhugo%2bgithub%2f" target="_blank" title="StumbleUpon" class="stumbleupon"><span class="fa fa-stumbleupon fa-3x">
+</span></a>
+</div>
+        
+<section class="post-comments">
+<a class="muut" href="https://muut.com/i/fredrikloch/comments:Hugo&#43;GitHub%e5%85%a5%e9%97%a8">Comments</a>
+<script src="//cdn.muut.com/1/moot.min.js"></script>
+</section>
+
+
+
+
+      </div>
+    </div>
+
+  </body>
+  
+</html>

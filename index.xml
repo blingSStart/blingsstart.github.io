@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>xing&#39;s Blog on xing&#39;s Blog </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://blingsstart.github.io/</link>
+    <language>en-us</language>
+    <author>Jhon xing</author>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <updated>Sun, 01 Dec 2019 10:58:34 CST</updated>
+    
+    <item>
+      <title>Posts</title>
+      <link>https://blingsstart.github.io/post/</link>
+      <pubDate>Sun, 01 Dec 2019 10:58:34 CST</pubDate>
+      <author>Jhon xing</author>
+      <guid>https://blingsstart.github.io/post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
