@@ -7,10 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 01 Dec 2019 10:58:34 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 04 Dec 2019 10:55:56 +0800</lastBuildDate>
     
 	<atom:link href="https://blingsstart.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>排序问题</title>
+      <link>https://blingsstart.github.io/post/%E6%8E%92%E5%BA%8F%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 04 Dec 2019 10:55:56 +0800</pubDate>
+      
+      <guid>https://blingsstart.github.io/post/%E6%8E%92%E5%BA%8F%E9%97%AE%E9%A2%98/</guid>
+      <description>在线预览
+常见的排序问题 [本篇文章主要介绍入门级别排序]
+  问题： 一个整型数组 int[] a = {2,5,1,4,3}; 要求对其排序    冒泡排序    冒泡排序是比较简单的排序，因为其排序过程类似于气泡的上浮，故此起名   算法剖析： 简单来说&amp;ndash;》就是俩俩比较，将最大值放在最后或者将最小值放在最开始都可以，常用将最大值放在最后 详细来说&amp;ndash;》拿出0位置数字与1位置数字进行比较，0位置数字大于1位置数字就交换俩个数字之间的位置（小于等于就不交换位置，下面的比较也是一样），然后1位置数字和2位置数字进行比较，1位置数字大于2位置数字就交换，每次比较数字位置都加1，结束条件：[一直比较到最后位置数字，确定出整个数组的最大值，在进行下一轮比较], 那下一轮的比较就可以只比较除了数组最大值的其他数字，比较出第二大的数字，放在倒数第二位，依次依次进行比较 多说无用上菜：第一轮比较  第一次比较 &amp;ndash;》2,5,1,4,3（2和5比较，没有发生变化） 第二次发生比较 &amp;ndash;》2,5,1,4,3（5和1进行比较，发现5&amp;gt;1,交换俩数字的位置）&amp;ndash; 交换后：2,1,5,4,3 第三次发生比较 &amp;ndash;》2,1,5,4,3（5和4进行比较，发现5&amp;gt;4，交换俩数字的位置） &amp;ndash; 交换后 2,1,4,5,3 第四次发生比较 &amp;ndash;》2,1,4,5,3（5和3进行比较，发现5&amp;gt;3,交换俩数字的位置） &amp;ndash; 交换后 2,1,4,3,5    第一轮比较结束，确认出最大值5，此时数组顺序为 2,1,4,3,5
+第二轮比较（现数组2,1,4,3,[5]）因为现在数组中已经确定最大值5，所以这次比较直接比较前四个数即可 - 第一次比较 &amp;ndash;》2,1,4,3,[5]（2和1比较，发现2&amp;gt;1,交换俩数字的位置）&amp;ndash; 交换后：1,2,4,3,[5] - 第二次进行比较 &amp;ndash;》 1,2,4,3,[5] (2和4比较，没有发生变化)
+ 第三次进行比较 &amp;ndash;》 1,2,4,3,[5]（4和3比较，发现4&amp;gt;3,交换俩数字的位置）&amp;ndash; 交换后：1,2,3,4,[5]  第二轮比较结束，确认出第二大的值4，此时数组的顺序为1,2,3,4,5
+第三轮比较，确认出第三大的值3，此时数组的顺序为1,2,3,4,5
+第四轮比较，确认出第四大的值2，此时数组的顺序为1,2,3,4,5
+（虽然从第二轮比较后数组顺序未发生改变，但是遍历比较还是在进行。思考：重复的比较 ） 整体比较结束1,2,3,4,5</description>
+    </item>
     
     <item>
       <title>Hugo&#43;GitHub入门</title>

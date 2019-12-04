@@ -3,22 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blingsstart.github.io/post/</loc>
+    <lastmod>2019-12-04T10:55:56+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blingsstart.github.io/</loc>
+    <lastmod>2019-12-04T10:55:56+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blingsstart.github.io/post/%E6%8E%92%E5%BA%8F%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2019-12-04T10:55:56+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blingsstart.github.io/post/hugo&#43;github/</loc>
     <lastmod>2019-12-01T10:58:34+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://blingsstart.github.io/post/markdown/</loc>
-    <lastmod>2019-12-01T10:58:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blingsstart.github.io/post/</loc>
-    <lastmod>2019-12-01T10:58:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blingsstart.github.io/</loc>
     <lastmod>2019-12-01T10:58:34+08:00</lastmod>
   </url>
   

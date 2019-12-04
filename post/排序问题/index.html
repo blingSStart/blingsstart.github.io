@@ -1,0 +1,256 @@
+  <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> 排序问题 &middot; xing&#39;s Blog </title>
+    
+    <link rel="stylesheet" type="text/css" href="https://blingsstart.github.io/css/uno.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://blingsstart.github.io/css/lightGallery.css" />
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blingsstart.github.io/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="https://blingsstart.github.io/favicon.ico">
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="xing&#39;s Blog" />
+    
+    <script src="https://blingsstart.github.io/js/jquery.min.js"></script>
+    <script src="https://blingsstart.github.io/js/main.min.js">
+    </script>
+</head>
+
+  <body>
+    <div id="scriptHeader">
+    <span class="mobile btn-mobile-menu">
+            <i class="fa fa-bars btn-mobile-menu__icon"></i>
+            <i class="fa fa-times btn-mobile-close__icon hidden"> </i>
+    </span>
+    <header class="
+        
+            panel-cover panel-cover--collapsed
+        "  style="background-image: url(/images/background-cover.jpg)" >
+    <div class="panel-main">
+        <div class="panel-main__inner panel-inverted">
+            <div class="panel-main__content"> 
+                <h1 class="panel-cover__title panel-title">
+                    <a href="https://blingsstart.github.io/"  title="link to homepage for xing&#39;s Blog">xing&#39;s Blog</a>
+                </h1>
+                <hr class="panel-cover__divider" />
+                <p class="panel-cover__description">  Learning more~~~  </p>
+                <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                <div class="navigation-wrapper">
+                    <nav class="cover-navigation cover-navigation--primary">
+                        <ul class="navigation">
+                            <li class="navigation__item"><a href="https://blingsstart.github.io#blog" title="link to xing&#39;s Blog blog" class="blog-button">Blog</a> </li></br>
+                            
+                            
+                       </ul>
+                    </nav> <nav class="cover-navigation navigation--social">
+    <ul class="navigation">   
+        
+        <li class="navigation__item">
+            <a href="https://github.com/blingsstart" title="blingsstart on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
+        </li>  </br>   
+        
+        <li class="navigation__item">
+            <a href="mailto:busyxxx@126.com" title="Email busyxxx@126.com"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
+        </li>  </ul>
+</nav>
+ </div>
+            </div>
+        </div>
+        <div class="panel-cover--overlay"></div>
+    </div>
+</header>
+</div>
+<noscript>
+    <style>
+        #scriptHeader {display:none;}
+        .navigation-wrapper{
+            display: block;
+            top: 0;
+        }
+    </style>
+
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content"> 
+                    <h1 class="panel-cover__title panel-title">
+                        <a href="https://blingsstart.github.io/"  title="link to homepage for xing&#39;s Blog">xing&#39;s Blog</a>
+                    </h1>
+                    <hr class="panel-cover__divider" />
+                    <p class="panel-cover__description">  Learning more~~~  </p>
+                    <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                    <div class="navigation-wrapper">
+                        <nav class="cover-navigation cover-navigation--primary">
+                            <ul class="navigation">
+                                <li class="navigation__item"><a href="https://blingsstart.github.io/#blog" title="link to xing&#39;s Blog blog" class="blog-button">Blog</a> </li></br>
+                                
+                                
+                           </ul>
+                        </nav> <nav class="cover-navigation navigation--social">
+    <ul class="navigation">   
+        
+        <li class="navigation__item">
+            <a href="https://github.com/blingsstart" title="blingsstart on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
+        </li>  </br>   
+        
+        <li class="navigation__item">
+            <a href="mailto:busyxxx@126.com" title="Email busyxxx@126.com"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
+        </li>  </ul>
+</nav>
+ </div>
+                </div>
+            </div>
+            <div class="panel-cover--overlay"></div>
+        </div>
+    </header>
+</noscript>
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <div class="post">
+          <h1>排序问题</h1>
+          <span class="post-date">Wed, Dec 4, 2019</span>
+          
+
+<p><a href="https://blingsstart.github.io">在线预览</a></p>
+
+<h2 id="常见的排序问题">常见的排序问题</h2>
+
+<p>[本篇文章主要介绍入门级别排序]</p>
+
+<blockquote>
+<ul>
+<li>问题： 一个整型数组 <code>int[] a = {2,5,1,4,3};</code> 要求对其排序</li>
+</ul>
+</blockquote>
+
+<ol>
+<li>冒泡排序</li>
+</ol>
+
+<blockquote>
+<ul>
+<li>冒泡排序是比较简单的排序，因为其排序过程类似于气泡的上浮，故此起名</li>
+</ul>
+
+<ol>
+<li>算法剖析：
+简单来说&ndash;》就是俩俩比较，将最大值放在最后或者将最小值放在最开始都可以，常用将最大值放在最后
+详细来说&ndash;》拿出0位置数字与1位置数字进行比较，0位置数字大于1位置数字就交换俩个数字之间的位置（小于等于就不交换位置，下面的比较也是一样），然后1位置数字和2位置数字进行比较，1位置数字大于2位置数字就交换，每次比较数字位置都加1，结束条件：[一直比较到最后位置数字，确定出整个数组的最大值，在进行下一轮比较],
+那下一轮的比较就可以只比较除了数组最大值的其他数字，比较出第二大的数字，放在倒数第二位，依次依次进行比较</li>
+<li>多说无用<strong>上菜</strong>：第一轮比较
+
+<ul>
+<li>第一次比较 &ndash;》<strong>2,5</strong>,1,4,3（2和5比较，没有发生变化）</li>
+<li>第二次发生比较 &ndash;》2,<strong>5</strong>,<strong>1</strong>,4,3（5和1进行比较，发现5&gt;1,交换俩数字的位置）&ndash; 交换后：2,<strong>1</strong>,<strong>5</strong>,4,3</li>
+<li>第三次发生比较 &ndash;》2,1,<strong>5,4</strong>,3（5和4进行比较，发现5&gt;4，交换俩数字的位置） &ndash; 交换后 2,1,<strong>4</strong>,<strong>5</strong>,3</li>
+<li>第四次发生比较 &ndash;》2,1,4,<strong>5,3</strong>（5和3进行比较，发现5&gt;3,交换俩数字的位置） &ndash; 交换后 2,1,4,<strong>3</strong>,<strong>5</strong>
+<br /></li>
+</ul></li>
+</ol>
+
+<p>第一轮比较结束，确认出最大值5，此时数组顺序为 <code>2,1,4,3,5</code></p>
+
+<p>第二轮比较（现数组2,1,4,3,<strong>[5]</strong>）因为现在数组中已经确定最大值<strong>5</strong>，所以这次比较直接比较前四个数即可
+ - 第一次比较 &ndash;》<strong>2,1</strong>,4,3,<strong>[5]</strong>（2和1比较，发现2&gt;1,交换俩数字的位置）&ndash; 交换后：<strong>1,2</strong>,4,3,<strong>[5]</strong>
+ - 第二次进行比较 &ndash;》 1,<strong>2,4</strong>,3,<strong>[5]</strong> (2和4比较，没有发生变化)</p>
+
+<ul>
+<li>第三次进行比较 &ndash;》 1,2,<strong>4,3</strong>,<strong>[5]</strong>（4和3比较，发现4&gt;3,交换俩数字的位置）&ndash; 交换后：1,2,<strong>3,4</strong>,<strong>[5]</strong></li>
+</ul>
+
+<p>第二轮比较结束，确认出第二大的值4，此时数组的顺序为<code>1,2,3,4,5</code></p>
+
+<p>第三轮比较，确认出第三大的值3，此时数组的顺序为<code>1,2,3,4,5</code></p>
+
+<p>第四轮比较，确认出第四大的值2，此时数组的顺序为<code>1,2,3,4,5</code></p>
+
+<p>（虽然从第二轮比较后数组顺序未发生改变，但是遍历比较还是在进行。思考：<del>重复的比较</del> ） 整体比较结束<code>1,2,3,4,5</code></p>
+
+<p>3.总结 ：我们发现，冒泡排序其实真的就像浮起的泡泡，一层层向上飘，将最大的泡泡置顶，第二大的泡泡放到第二个位置，依次排序比较
+ 代码演示：
+ <img src="https://img-blog.csdnimg.cn/2019120317472714.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="代码演示" /></p>
+</blockquote>
+
+<ol>
+<li><p>选择排序
+&gt;  1. 算法剖析：通过遍历数组将第一个数值与剩余数值比较拿出最大值或者最小值，与冒泡排序的区别就是选择排序是取出一个数字和其他剩余的数值进行<code>一一</code>比较（外层循环），而冒泡排序是<code>俩俩</code>比较遍历（内层循环）
+&gt;<br />
+&gt;  2. 继续<strong>整</strong>：第一轮比较
+&gt;  - 第一次比较 &ndash;》<strong>2,5</strong>,1,4,3（2和5比较，没有发生变化）
+&gt;  - 第二次发生比较 &ndash;》<strong>2</strong>,5,<strong>1</strong>,4,3（2和1进行比较，发现2&gt;1，这时最小值为1）
+&gt;  - 第三次发生比较 &ndash;》2,5,<strong>1</strong>,<strong>4</strong>,3（拿当前最小值1和4进行比较，没有发生变化）
+&gt;  - 第四次发生比较 &ndash;》2,5,<strong>1</strong>,4,<strong>3</strong>（拿当前最小值1和3进行比较，没有发生变化）
+&gt;<br />
+&gt;  第一轮比较结束，确认出最小值1，交换最小值与0位置数值的位置，此时顺序为<code>1,5,2,4,3</code>
+&gt;  第二轮比较，此时确定最小值为1，排除掉这个数值，从下一个进行相同比较
+&gt;  - 第一次发生比较 &ndash;》<strong>[1]</strong>,,<strong>5,2</strong>,4,3（5和2进行比较,5&gt;2，当前最小值变为2）
+&gt;    第二次发生比较 &ndash;》<strong>[1]</strong>,,5,<strong>2,4</strong>,3（拿当前最小值2和4进行比较，没有发生变化）
+&gt;     第三次发生比较 &ndash;》<strong>[1]</strong>,,5,<strong>2</strong>,4,<strong>3</strong>（拿当前最小值2和3进行比较，没有发生变化）
+&gt;<br />
+&gt;  第二轮比较结束，确认出当前最小值2 ，交换5与2的位置，现在的顺序就变为了<code>1,2,5,4,3</code>
+&gt;
+&gt;第三轮比较结束，确认出当前最小值3，当前数组顺序为<code>1,2,3,4,5</code>
+&gt;
+&gt;第四轮比较结束，确认出当前最小值4，当前数组顺序为<code>1,2,3,4,5</code>
+&gt;
+&gt;当数组只剩一个数值为比较时，就可以停止比较了，整体顺序<code>1,2,3,4,5</code>
+&gt;
+&gt;（思考：<del>重复比较</del> ）
+&gt;
+&gt;总结：选择排序其实就是依次选择每个数值进行<code>一一</code>比较，选出最大值或者最小值放到0位置
+&gt;  代码演示：
+&gt;  <img src="https://img-blog.csdnimg.cn/20191204095733430.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p></li>
+
+<li><p>插入排序
+&gt; 1. 算法剖析：类似于冒泡排序的俩俩比较，但仅此而已，不同的是&ndash;当前一个数值与后一个数值发生交换后，这个交换过来的数值要与前面的数值进行比较交换
+&gt;   2. 接着<strong>整</strong>：第一轮比较
+&gt;  - 第一次比较 &ndash;》<strong>2,5</strong>,1,4,3，（2和5比较，没有发生变化）
+&gt;  - 第二次比较 &ndash;》2,<strong>5,1</strong>,4,3，（5和1进行比较，5&gt;1交换位置），交换后2,<strong>1,5</strong>,4,3
+&gt;  - 第三次比较 &ndash; 》<strong>2,1</strong>,5,4,3，这时候我们就需要<code>从头再来</code>，一直到交换数值的位置（2和1进行比较，2&gt;1交换位置），交换后<strong>1,2</strong>,5,4,3
+&gt;  - 第四次比较 &ndash;》1,2,<strong>5,4</strong>,3 ，从5位置开始向后比较（5和4比较,5&gt;4交换位置），交换后1,2,<strong>4,5</strong>,3
+&gt;  - 第五次比较 &ndash;》 1,2,<strong>4,5</strong>,3，从交换过来的4向前比较（重复1步骤进行比较先1,2进行比较没有发生变化，在2,4进行比较没有发生变化）
+&gt;  - 第六次比较  1,2,4,<strong>5,3</strong>， 从当前数值5位置继续向后比较（5和3比较，5&gt;3交换位置），交换后 1,2,4,<strong>3,5</strong>
+&gt;  - 第七次进行比较 1,2,<strong>4,3</strong>,5 ，<code>从头再来</code>（1,2进行比较没有发生变化，2,4进行比较没有发生变化，4,3进行比较，4&gt;3交换位置[交换位置之后又要<code>从头</code>进行比较]）,交换后1,2,<strong>3,4</strong>,5
+&gt;  这时我们会发现想要继续向下比，5的后面已经没有数值了，这样即说明，排好了
+&gt;  （思考：<del>重复比较</del>，共比较了多少次 ）
+&gt;
+&gt;总结：插入排序其实就是俩俩比较，交换后要<code>从头再来</code>
+&gt;  代码演示：
+&gt;  <img src="https://img-blog.csdnimg.cn/20191204104515767.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p></li>
+</ol>
+
+<h5 id="后续还会继续出其他的排序方式敬请期待">后续还会继续出其他的排序方式敬请期待！！</h5>
+
+        </div>
+        <div class="sharing">
+<a href="https://twitter.com/intent/tweet?status=%e6%8e%92%e5%ba%8f%e9%97%ae%e9%a2%98-https%3a%2f%2fblingsstart.github.io%2fpost%2f%25E6%258E%2592%25E5%25BA%258F%25E9%2597%25AE%25E9%25A2%2598%2f" target="_blank" title="Follow me on Twitter" class="twitter">
+<span class="fa fa-twitter-square fa-3x"></span></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblingsstart.github.io%2fpost%2f%25E6%258E%2592%25E5%25BA%258F%25E9%2597%25AE%25E9%25A2%2598%2f" target="_blank" title="Join me on Facebook" class="facebook">
+<span class="fa fa-facebook-square fa-3x"></span></a>
+<a href="https://plus.google.com/share?url=https%3a%2f%2fblingsstart.github.io%2fpost%2f%25E6%258E%2592%25E5%25BA%258F%25E9%2597%25AE%25E9%25A2%2598%2f" target="_blank" title="Google+" class="googleplus">
+<span class="fa fa-google-plus-square fa-3x"></span></a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblingsstart.github.io%2fpost%2f%25E6%258E%2592%25E5%25BA%258F%25E9%2597%25AE%25E9%25A2%2598%2f&title=%e6%8e%92%e5%ba%8f%e9%97%ae%e9%a2%98" target="_blank" title="LinkedIn" class="linkedin">
+<span class="fa fa-linkedin-square fa-3x"></span></a>
+<a href="http://www.reddit.com/submit?url=https%3a%2f%2fblingsstart.github.io%2fpost%2f%25E6%258E%2592%25E5%25BA%258F%25E9%2597%25AE%25E9%25A2%2598%2f" target="_blank" title="Reddit" class="reddit"><span class="fa fa-reddit-square fa-3x"></span></a>
+<a href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fblingsstart.github.io%2fpost%2f%25E6%258E%2592%25E5%25BA%258F%25E9%2597%25AE%25E9%25A2%2598%2f" target="_blank" title="StumbleUpon" class="stumbleupon"><span class="fa fa-stumbleupon fa-3x">
+</span></a>
+</div>
+        
+<section class="post-comments">
+<a class="muut" href="https://muut.com/i/fredrikloch/comments:%e6%8e%92%e5%ba%8f%e9%97%ae%e9%a2%98">Comments</a>
+<script src="//cdn.muut.com/1/moot.min.js"></script>
+</section>
+
+
+
+
+      </div>
+    </div>
+
+  </body>
+  
+</html>
