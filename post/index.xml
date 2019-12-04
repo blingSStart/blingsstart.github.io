@@ -20,8 +20,10 @@
       <guid>https://blingsstart.github.io/post/hugo&#43;github/</guid>
       <description>在线预览
 hugo简介 使用Go语言编写的静态站点生成器（注：官网文档 hugo中文网文档） （本人是小白一个，请大家来指点提携）现在的博客主流框架有很多，比如hexo,docker也可用来搭建（动态）博客，简单来说一下hugo 因为本人是贫穷小白所以本文以介绍windows（为主）和linux
-优缺点   优点 体积小 安装步骤简单，适合小白 操作简单 运行快 缺点 作为一个博客框架，他的主题属实有点少 当然可能还有其他的优缺点，请教万能的[百老师]，今天主要就是谈论一下如何安装hugo，基本配置以及远程发布到github   准备工作：  1.自行注册github账号，提前安装好git（自行百度，或者等待我下一篇git安装及基本操作，如果是windows以下操作最好在git bash中操作（git bash与linux操作相同），也可以自行下载chocolately，linux下直接命令行即可） 2.hugo下载（根据电脑系统选择下载方式） + linux：命令行输入(brew install hugo）验证：hugo version windows下载方式下载Hugo-releases版本 + windows： hugo中文网上面有更系统的教程（可对比学习），自认为本人写的更加通俗易懂
- 正式工作：  3.安装成功后创建一个站点 - hugo new site myblog 4.查看[ls]当前目录下就会生成一个myblog文件夹目录结构如下 让我们来一起看看文档的结构吧 5.下载主题 - hugo中文网 这个网页基本涵盖了hugo的所有内容（英文版是themes）中文版就是皮肤列表，点击进去自选心仪的主题下载 - 点进喜欢的页面之后，（找到Installation）cd 到themes目录下 复制 （举例）git clone https://github.com/syui/hugo-theme-air 到bash中就会进行下载 - 下载后查看当前目录的子目录 可以把archetypes整体复制到你创建站点目录下覆盖掉原有的archetypes目录（上面提到过这个目录的作用） - 将theme.toml同样复制到你创建站点目录下覆盖掉原有的config.toml(你需要对theme.toml进行重命名)这个就是博客的配置文件 - 如果不想修改也可以做下面的变更 config.toml配置：（注意此时是yaml格式需要以- - -开始以- - -结束横杠间可以有空格也可以没有） archetypes中的default.</description>
+优缺点   优点 体积小 安装步骤简单，适合小白 操作简单 运行快 缺点 作为一个博客框架，他的主题属实有点少 当然可能还有其他的优缺点，请教万能的[百老师]，今天主要就是谈论一下如何安装hugo，基本配置以及远程发布到github   准备工作：  1.自行注册github账号，提前安装好git（自行百度，或者等待我下一篇git安装及基本操作，如果是windows以下操作最好在git bash中操作（git bash与linux操作相同），也可以自行下载chocolately，linux下直接命令行即可） 2.hugo下载（根据电脑系统选择下载方式） (配置环境变量windows下直接将hugo安装目录复制粘贴到系统变量中的path)
+ linux：命令行输入(brew install hugo）验证：hugo version windows下载方式下载Hugo-releases版本
+ windows： hugo中文网上面有更系统的教程（可对比学习），自认为本人写的更加通俗易懂
+   正式工作：  3.安装成功后创建一个站点 - hugo new site myblog 4.查看[ls]当前目录下就会生成一个myblog文件夹目录结构如下 让我们来一起看看文档的结构吧 5.下载主题 - hugo中文网 这个网页基本涵盖了hugo的所有内容（英文版是themes）中文版就是皮肤列表，点击进去自选心仪的主题下载 - 点进喜欢的页面之后，（找到Installation）cd 到themes目录下 复制 （举例）git clone https://github.com/syui/hugo-theme-air 到bash中就会进行下载 - 下载后查看当前目录的子目录 可以把archetypes整体复制到你创建站点目录下覆盖掉原有的archetypes目录（上面提到过这个目录的作用） - 将theme.toml同样复制到你创建站点目录下覆盖掉原有的config.toml(你需要对theme.toml进行重命名)这个就是博客的配置文件 - 如果不想修改也可以做下面的变更 config.toml配置：（注意此时是yaml格式需要以- - -开始以- - -结束横杠间可以有空格也可以没有） archetypes中的default.</description>
     </item>
     
     <item>
