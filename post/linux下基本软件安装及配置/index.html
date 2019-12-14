@@ -118,25 +118,37 @@
 <h2 id="linux下的jdk安装">linux下的jdk安装:</h2>
 
 <ol>
-<li>下载linux版本的jdk安装包
- &gt; - ①下载jdk的压缩包然后解压后配置环境变量。
-        ②下载可执行文件直接运行安装。
-  &gt; - ①将jdk的压缩包上次到linux主机中。
-    ②需要将压缩包远程上传到linux主机中，而linux主机默认支持ftp协议
-        我们只需要在本地电脑主机中安装一个支持ftp协议的客户端即可
-         使用客户端:filezilla/xftp(建议用这个和xshell联合使用)
-        ③解压jdk压缩包。
-        ④配置jdk的环境变量。
-&mdash;</li>
+<li><p>下载linux版本的jdk安装包</p>
 
-<li><p>Linux系统中安装和配置JDK
-&gt; 1、上传JDK压缩包到linux主机中
-在usr下创建一个目录叫upload(叫什么都可以文件位置自己定)，用来存储上传的jdk压缩包资源。
-2、使用FileZilla软件上传jdk压缩包到usr/bjsxt目录中
-3、在Xshell中使用tar命令将jdk压缩包进行解压。
-4、将解压后的jdk文件复制到usr/local目录下 并重名名为 jdk7
-5、查看/usr/local下是否有jdk7目录资源
-6、配置Jdk的环境变量
+<blockquote>
+<ul>
+<li>①下载jdk的压缩包然后解压后配置环境变量。
+    ②下载可执行文件直接运行安装。</li>
+<li>①将jdk的压缩包上次到linux主机中。
+②需要将压缩包远程上传到linux主机中，而linux主机默认支持ftp协议
+    我们只需要在本地电脑主机中安装一个支持ftp协议的客户端即可
+     使用客户端:filezilla/xftp(建议用这个和xshell联合使用)
+    ③解压jdk压缩包。
+    ④配置jdk的环境变量。</li>
+</ul>
+</blockquote></li>
+
+<li><p>Linux系统中安装和配置JDK</p>
+
+<blockquote>
+<p>1、上传JDK压缩包到linux主机中
+在usr下创建一个目录叫upload(叫什么都可以文件位置自己定)，用来存储上传的jdk压缩包资源。</p>
+</blockquote>
+
+<p>2、使用FileZilla软件上传jdk压缩包到usr/bjsxt目录中</p>
+
+<p>3、在Xshell中使用tar命令将jdk压缩包进行解压。</p>
+
+<p>4、将解压后的jdk文件复制到usr/local目录下 并重名名为 jdk7</p>
+
+<p>5、查看/usr/local下是否有jdk7目录资源</p>
+
+<p>6、配置Jdk的环境变量
 进入etc文件目录，编辑文件profile，在该文件中配置jdk的环境变量。
 进入编辑profile文件的视图中，点击i或insert进入编辑状态
 配置jdk环境变量，配置完成后退出并保存。</p>
@@ -147,8 +159,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 </code></pre>
 
-<p>7、重新加载profile文件（source +文件全路径名）
-8、输入java -version 验证是否配置成功</p></li>
+<p>7、重新加载profile文件（source +文件全路径名）,输入java -version 验证是否配置成功</p></li>
 </ol>
 
 <h2 id="linux下的tomcat服务器安装">linux下的tomcat服务器安装：</h2>
@@ -170,21 +181,33 @@ export CATALINA_HOME=/usr/local/tomcat7
 在(安装目录)/usr/local/tomcat7/bin目录下执行 startup.sh
 在linux主机本地中打开火狐浏览器输入  localhost:8080/ 回车如果出现tomcat的广告页则安装成功。</p></li>
 
-<li><p>在其他主机中的浏览器访问linux主机中的tomcat服务器。
-&gt; 问题： linux主机的防火墙默认只放行22端口号的请求链接。造成8080请求被阻拦。
- 解决：
-1、配置linux主机的防火墙放行8080端口号
-2、关闭linux主机的防火墙
-实现：
-1、修改linux主机的防火墙，放行8080 端口号，编辑防火墙配置文件，添加8080端口号放行，退出保存。
-2、重新加载防火墙配置文件
-3、在外部浏览器中访问即可。
-为了初学者的便利使用，可以在安装时不安装防火墙，选择安装最小版linux系统</p>
+<li><p>在其他主机中的浏览器访问linux主机中的tomcat服务器。</p>
+
+<blockquote>
+<p>问题： linux主机的防火墙默认只放行22端口号的请求链接。造成8080请求被阻拦。</p>
+</blockquote>
+
+<p>解决：</p>
+
+<p>1、配置linux主机的防火墙放行8080端口号</p>
+
+<p>2、关闭linux主机的防火墙</p>
+
+<p>实现：
+1、修改linux主机的防火墙，放行8080 端口号，编辑防火墙配置文件，添加8080端口号放行，退出保存。</p>
+
+<p>2、重新加载防火墙配置文件</p>
+
+<p>3、在外部浏览器中访问即可。</p>
+
+<p>为了初学者的便利使用，可以在安装时不安装防火墙，选择安装最小版linux系统</p></li>
+</ol>
 
 <h2 id="linux下的mysql安装">linux下的MySQL安装:</h2>
 
-<p>安装和使用:</p></li>
+<p>安装和使用:</p>
 
+<ol>
 <li><p>检查之前是否安装 mysql，安装过则卸载
 &gt;  rpm -qa | grep -i mysql
 已经安装了库文件，应该先卸载，不然会出现覆盖错误
@@ -298,7 +321,7 @@ export CATALINA_HOME=/usr/local/tomcat7
 </code></pre>
 
 <blockquote>
-<p>linux下的mysql的使用:
+<p>linux下的mysql的使用&mdash;
 注意:
 ①需要关闭linux系统的防火墙或者放行3306端口号
 ②MySQL安装成功后默认只支持本地连接，需要配置root账户的远程链接权限。

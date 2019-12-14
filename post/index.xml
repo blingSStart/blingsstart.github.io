@@ -28,8 +28,15 @@
       <pubDate>Fri, 13 Dec 2019 20:45:22 +0800</pubDate>
       
       <guid>https://blingsstart.github.io/post/linux%E4%B8%8B%E5%9F%BA%E6%9C%AC%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</guid>
-      <description>linux下的jdk安装:  下载linux版本的jdk安装包 &amp;gt; - ①下载jdk的压缩包然后解压后配置环境变量。 ②下载可执行文件直接运行安装。 &amp;gt; - ①将jdk的压缩包上次到linux主机中。 ②需要将压缩包远程上传到linux主机中，而linux主机默认支持ftp协议 我们只需要在本地电脑主机中安装一个支持ftp协议的客户端即可 使用客户端:filezilla/xftp(建议用这个和xshell联合使用) ③解压jdk压缩包。 ④配置jdk的环境变量。 &amp;mdash; Linux系统中安装和配置JDK &amp;gt; 1、上传JDK压缩包到linux主机中 在usr下创建一个目录叫upload(叫什么都可以文件位置自己定)，用来存储上传的jdk压缩包资源。 2、使用FileZilla软件上传jdk压缩包到usr/bjsxt目录中 3、在Xshell中使用tar命令将jdk压缩包进行解压。 4、将解压后的jdk文件复制到usr/local目录下 并重名名为 jdk7 5、查看/usr/local下是否有jdk7目录资源 6、配置Jdk的环境变量 进入etc文件目录，编辑文件profile，在该文件中配置jdk的环境变量。 进入编辑profile文件的视图中，点击i或insert进入编辑状态 配置jdk环境变量，配置完成后退出并保存。
-（找到这一句，在后面加上如下代码）#export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL export JAVA_HOME=/usr/local/jdk7 export PATH=$JAVA_HOME/bin:$PATH export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar  7、重新加载profile文件（source +文件全路径名） 8、输入java -version 验证是否配置成功
+      <description>linux下的jdk安装:  下载linux版本的jdk安装包
+  ①下载jdk的压缩包然后解压后配置环境变量。 ②下载可执行文件直接运行安装。 ①将jdk的压缩包上次到linux主机中。 ②需要将压缩包远程上传到linux主机中，而linux主机默认支持ftp协议 我们只需要在本地电脑主机中安装一个支持ftp协议的客户端即可 使用客户端:filezilla/xftp(建议用这个和xshell联合使用) ③解压jdk压缩包。 ④配置jdk的环境变量。   Linux系统中安装和配置JDK
+ 1、上传JDK压缩包到linux主机中 在usr下创建一个目录叫upload(叫什么都可以文件位置自己定)，用来存储上传的jdk压缩包资源。
+ 2、使用FileZilla软件上传jdk压缩包到usr/bjsxt目录中
+3、在Xshell中使用tar命令将jdk压缩包进行解压。
+4、将解压后的jdk文件复制到usr/local目录下 并重名名为 jdk7
+5、查看/usr/local下是否有jdk7目录资源
+6、配置Jdk的环境变量 进入etc文件目录，编辑文件profile，在该文件中配置jdk的环境变量。 进入编辑profile文件的视图中，点击i或insert进入编辑状态 配置jdk环境变量，配置完成后退出并保存。
+（找到这一句，在后面加上如下代码）#export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL export JAVA_HOME=/usr/local/jdk7 export PATH=$JAVA_HOME/bin:$PATH export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar  7、重新加载profile文件（source +文件全路径名）,输入java -version 验证是否配置成功
   linux下的tomcat服务器安装：  上传tomcat压缩包到/sxt目录下。 解压tomcat的压缩包 复制解压后tomcat资源到/usr/local下，并命名为tomcat7 在/etc/profile文件中配置tomcat的环境变量（如下），并退出保存
 export TOMCAT_HOME=/usr/local/tomcat7 export CATALINA_HOME=/usr/local/tomcat7  重新加载profile文件
  启动tomcat服务器，并验证tomcat的安装 在(安装目录)/usr/local/tomcat7/bin目录下执行 startup.sh 在linux主机本地中打开火狐浏览器输入 localhost:8080/ 回车如果出现tomcat的广告页则安装成功。</description>
@@ -42,8 +49,11 @@ export TOMCAT_HOME=/usr/local/tomcat7 export CATALINA_HOME=/usr/local/tomcat7  �
       
       <guid>https://blingsstart.github.io/post/linux%E7%B3%BB%E7%BB%9F%E5%8F%8A%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>Linux系统及常用命令学习: 首先我们来谈一谈为什么会使用linux系统  当今三大主流系统：
- windows系统‘    &amp;gt; 有好看的图形化界面，手动鼠标即可操作电脑上的一切，便利人们的生活，总结起来就是“`简单，粗暴，有效`”，但windows系统同时又是脆弱的，作为人手都有的windows系统，蓝屏可以说是每个人都经历过的事，计算机解决不了这个问题，直接罢工，哎！真巧，作为计算机使用者的你也一样解决不了，你和你的电脑只能大眼瞪小眼，无可奈何，还有就是常常更新的补丁，一直一直都在更新没有停过，为了追求高质量的体验我们可以肉痛一些，多花一点银子购置一款mac本    mac系统   &amp;gt; 很多人都说macOS是一个优雅的系统 ，因为它有着简单优雅的外表，同时又兼顾拥有华丽的内在美，是众多程序员的福音，但对于很多小白来说操作windows习惯了，入手mac还是有些困难，因为操作不同。mac将系统的权限无条件全部给予，一个不小心就会`凉凉`，但是windows不会，因为你没有高的权限，这样一比，感觉windows就像一个怎么都玩不坏的不倒翁    linux系统   &amp;gt; 一般高手都是操作无界面的命令行，那一行行晦涩难懂的代码， 可能正在发挥着难以想象的作用，linux严格来说是一个内核，一般使用linux内核的操作系统都被称为linux系统，比如Ubuntu，centos，Redhat，等。。。因为他的安全性以及稳定性，我们一般会使用linux作为服务主机（本地开发服务器，测试服务器，上线服务器等。。）  linux系统的安装 1.安装双系统（不推荐） 2.安装虚拟机（推荐，可以在一个虚拟机管理软件上（VMbox，Vmare）安装多个虚拟机，实现在一台电脑上，拥有多台电脑主机的体验 &amp;gt; 虚拟机安装步骤（傻瓜式操作即可）注意安装位置 &amp;gt; linux系统安装步骤，根据自己想要安装不同版本的系统，可以按照提示安装，可以按照自己的需求安装有界面或者无界面的linux系统（这种操作步骤就和安装windows系统一样熟能生巧，多安几次，自然就会了，所以不再多说）
-linux常用指令  ifconfig命令: 查看但当前主机的Ip地址信息 pwd命令：查看当前的目录路径信息 cd命令：进入指定目录下 &amp;gt; 使用:
+ windows系统‘    &amp;gt; 有好看的图形化界面，手动鼠标即可操作电脑上的一切，便利人们的生活，总结起来就是“`简单，粗暴，有效`”，但windows系统同时又是脆弱的，作为人手都有的windows系统，蓝屏可以说是每个人都经历过的事，计算机解决不了这个问题，直接罢工，哎！真巧，作为计算机使用者的你也一样解决不了，你和你的电脑只能大眼瞪小眼，无可奈何，还有就是常常更新的补丁，一直一直都在更新没有停过，为了追求高质量的体验我们可以肉痛一些，多花一点银子购置一款mac本    mac系统   &amp;gt; 很多人都说macOS是一个优雅的系统 ，因为它有着简单优雅的外表，同时又兼顾拥有华丽的内在美，是众多程序员的福音，但对于很多小白来说操作windows习惯了，入手mac还是有些困难，因为操作不同。mac将系统的权限无条件全部给予，一个不小心就会`凉凉`，但是windows不会，因为你没有高的权限，这样一比，感觉windows就像一个怎么都玩不坏的不倒翁    linux系统   &amp;gt; 一般高手都是操作无界面的命令行，那一行行晦涩难懂的代码， 可能正在发挥着难以想象的作用，linux严格来说是一个内核，一般使用linux内核的操作系统都被称为linux系统，比如Ubuntu，centos，Redhat，等。。。因为他的安全性以及稳定性，我们一般会使用linux作为服务主机（本地开发服务器，测试服务器，上线服务器等。。）  linux系统的安装 1.安装双系统（不推荐）
+2.安装虚拟机（推荐，可以在一个虚拟机管理软件上（VMbox，Vmare）安装多个虚拟机，实现在一台电脑上，拥有多台电脑主机的体验
+ 虚拟机安装步骤（傻瓜式操作即可）注意安装位置
+linux系统安装步骤，根据自己想要安装不同版本的系统，可以按照提示安装，可以按照自己的需求安装有界面或者无界面的linux系统（这种操作步骤就和安装windows系统一样熟能生巧，多安几次，自然就会了，所以不再多说）
+ linux常用指令  ifconfig命令: 查看但当前主机的Ip地址信息 pwd命令：查看当前的目录路径信息 cd命令：进入指定目录下 &amp;gt; 使用:
 cd /usr/local 绝对路径 cd local 相对路径。注意：当前路径已经在usr下 cd.. 返回上层级目录 cd ../.. 返回两级 一个..表示返回一层。可以多次拼接。 注意：路径中的第一个/表示根目录 clear命令:清屏
  ll命令:显示当前目录中子目录包括子文件信息（树状显示`） ls命令：以平铺的方式显示当前所在目录下的资源信息。 tab（快捷键）：自动补全功能。 &amp;gt; 作用：我们只要输入资源名称的前几个字母，使用tab键会自动补全。 注意：关键词汇尽量唯一。 mkdir命令：创建一个文件夹。 &amp;gt; 使用： mkdir 名称 在当前目录下创建一个指定的文件夹 vi/vim命令：使用vi或者vim编辑器创建文件，编辑文件。 &amp;gt; 使用: vi 文件名 创建文件并打开 vim 文件名 创建文件并打开 (本文只介绍常用命令，有意向了解vi或vim编辑器的可以手动度娘命令模式，插入模式等，，，) 操作（vim举例） &amp;gt; 1.</description>
     </item>
