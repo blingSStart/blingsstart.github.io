@@ -1,11 +1,10 @@
-    <!DOCTYPE html>
+  <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.59.1" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title> xing&#39;s Blog &middot; xing&#39;s Blog </title>
+    <title> Maven集成tomcat插件 &middot; xing&#39;s Blog </title>
     
     <link rel="stylesheet" type="text/css" href="https://blingsstart.github.io/css/uno.min.css" />
     <link rel="stylesheet" type="text/css" href="https://blingsstart.github.io/css/lightGallery.css" />
@@ -13,24 +12,22 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blingsstart.github.io/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="https://blingsstart.github.io/favicon.ico">
     
-    <link href="https://blingsstart.github.io/index.xml" rel="alternate" type="application/rss+xml" title="xing&#39;s Blog" />
+    <link href="" rel="alternate" type="application/rss+xml" title="xing&#39;s Blog" />
     
     <script src="https://blingsstart.github.io/js/jquery.min.js"></script>
     <script src="https://blingsstart.github.io/js/main.min.js">
     </script>
 </head>
 
-    <body>
-        <div id="scriptHeader">
+  <body>
+    <div id="scriptHeader">
     <span class="mobile btn-mobile-menu">
             <i class="fa fa-bars btn-mobile-menu__icon"></i>
             <i class="fa fa-times btn-mobile-close__icon hidden"> </i>
     </span>
     <header class="
         
-        
-                panel-cover
-        
+            panel-cover panel-cover--collapsed
         "  style="background-image: url(/images/background-cover.jpg)" >
     <div class="panel-main">
         <div class="panel-main__inner panel-inverted">
@@ -111,38 +108,88 @@
     </header>
 </noscript>
 
-        <div class="content-wrapper">
-            <div class="content-wrapper__inner">
-                <section id="main">
-                    <div>
-                        
-                            
-                                <article class="post">
-<header>
-<h2><a href="https://blingsstart.github.io/post/">Posts </a> </h2>
-<div class="post-meta">Fri, Dec 13, 2019 - Read in 0 Min </div>
-</header>
-<div class="summary">
-    
-</div>
-<footer>
-<a href='https://blingsstart.github.io/post/'><nobr>Read more →</nobr></a>
-</footer>
-</article>
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <div class="post">
+          <h1>Maven集成tomcat插件</h1>
+          <span class="post-date">Fri, Dec 13, 2019</span>
+          <blockquote>
+<p>本文将介绍常用的编译器eclipse和idea中maven项目集成tomcat的方式</p>
+</blockquote>
 
+<ol>
+<li>eclipse</li>
+</ol>
 
-                            
-                        
-                    </div>
-                    </br>
-                    <h4>
-                        <a href="https://blingsstart.github.io/post/">Archive</a>
-                    </h4>
-                </section>
-            </div>
+<blockquote>
+<ul>
+<li>添加tomcat插件（注意添加的tomcat创建在idea和eclipse中都一样）</li>
+</ul>
+</blockquote>
+
+<pre><code>&lt;plugin&gt;
+   &lt;groupId&gt;org.apache.tomcat.maven&lt;/groupId&gt;
+   &lt;artifactId&gt;tomcat7-maven-plugin&lt;/artifactId&gt;
+   //也可以改为6或者直接写tomcat，那下面写maven命令时要与这里对应
+   &lt;version&gt;2.2&lt;/version&gt;
+   &lt;configuration&gt;
+       &lt;port&gt;80&lt;/port&gt; //可以自行制定端口号
+       &lt;!-- &lt;path&gt;/abc&lt;/path&gt; --&gt;
+       &lt;uriEncoding&gt;UTF-8&lt;/uriEncoding&gt;
+   &lt;/configuration&gt;
+ &lt;/plugin&gt;
+</code></pre>
+
+<blockquote>
+<ul>
+<li>idea中只需要在</li>
+<li>eclipse中只需要配置，run Configuration
+<img src="https://img-blog.csdnimg.cn/20191210141510899.png" alt="在这里插入图片描述" />
+<img src="https://img-blog.csdnimg.cn/2019121320204961.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></li>
+<li>new 新建maven指令
+
+<ol>
+<li>指定工作目录</li>
+<li>在Goals中输入指令
+<img src="https://img-blog.csdnimg.cn/20191213203048903.png" alt="在这里插入图片描述" />
+2.idea
+添加的tomcat插件是一样的
+<img src="https://img-blog.csdnimg.cn/20191213202508595.png" alt="在这里插入图片描述" />
+出现如下界面
+<img src="https://img-blog.csdnimg.cn/20191213202615948.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" />
+点击后出现
+<img src="https://img-blog.csdnimg.cn/20191213202848653.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" />
+<img src="https://img-blog.csdnimg.cn/20191213202949222.png" alt="在这里插入图片描述" /></li>
+</ol></li>
+</ul>
+</blockquote>
+
         </div>
-        <footer class="footer"></footer>
-
+        <div class="sharing">
+<a href="https://twitter.com/intent/tweet?status=Maven%e9%9b%86%e6%88%90tomcat%e6%8f%92%e4%bb%b6-https%3a%2f%2fblingsstart.github.io%2fpost%2fmaven%25E9%259B%2586%25E6%2588%2590tomcat%25E6%258F%2592%25E4%25BB%25B6%2f" target="_blank" title="Follow me on Twitter" class="twitter">
+<span class="fa fa-twitter-square fa-3x"></span></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblingsstart.github.io%2fpost%2fmaven%25E9%259B%2586%25E6%2588%2590tomcat%25E6%258F%2592%25E4%25BB%25B6%2f" target="_blank" title="Join me on Facebook" class="facebook">
+<span class="fa fa-facebook-square fa-3x"></span></a>
+<a href="https://plus.google.com/share?url=https%3a%2f%2fblingsstart.github.io%2fpost%2fmaven%25E9%259B%2586%25E6%2588%2590tomcat%25E6%258F%2592%25E4%25BB%25B6%2f" target="_blank" title="Google+" class="googleplus">
+<span class="fa fa-google-plus-square fa-3x"></span></a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblingsstart.github.io%2fpost%2fmaven%25E9%259B%2586%25E6%2588%2590tomcat%25E6%258F%2592%25E4%25BB%25B6%2f&title=Maven%e9%9b%86%e6%88%90tomcat%e6%8f%92%e4%bb%b6" target="_blank" title="LinkedIn" class="linkedin">
+<span class="fa fa-linkedin-square fa-3x"></span></a>
+<a href="http://www.reddit.com/submit?url=https%3a%2f%2fblingsstart.github.io%2fpost%2fmaven%25E9%259B%2586%25E6%2588%2590tomcat%25E6%258F%2592%25E4%25BB%25B6%2f" target="_blank" title="Reddit" class="reddit"><span class="fa fa-reddit-square fa-3x"></span></a>
+<a href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fblingsstart.github.io%2fpost%2fmaven%25E9%259B%2586%25E6%2588%2590tomcat%25E6%258F%2592%25E4%25BB%25B6%2f" target="_blank" title="StumbleUpon" class="stumbleupon"><span class="fa fa-stumbleupon fa-3x">
+</span></a>
+</div>
         
-    </body>
+<section class="post-comments">
+<a class="muut" href="https://muut.com/i/fredrikloch/comments:Maven%e9%9b%86%e6%88%90tomcat%e6%8f%92%e4%bb%b6">Comments</a>
+<script src="//cdn.muut.com/1/moot.min.js"></script>
+</section>
+
+
+
+
+      </div>
+    </div>
+
+  </body>
+  
 </html>

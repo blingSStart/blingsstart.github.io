@@ -1,0 +1,341 @@
+  <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> Linux下基本软件安装及配置 &middot; xing&#39;s Blog </title>
+    
+    <link rel="stylesheet" type="text/css" href="https://blingsstart.github.io/css/uno.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://blingsstart.github.io/css/lightGallery.css" />
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blingsstart.github.io/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="https://blingsstart.github.io/favicon.ico">
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="xing&#39;s Blog" />
+    
+    <script src="https://blingsstart.github.io/js/jquery.min.js"></script>
+    <script src="https://blingsstart.github.io/js/main.min.js">
+    </script>
+</head>
+
+  <body>
+    <div id="scriptHeader">
+    <span class="mobile btn-mobile-menu">
+            <i class="fa fa-bars btn-mobile-menu__icon"></i>
+            <i class="fa fa-times btn-mobile-close__icon hidden"> </i>
+    </span>
+    <header class="
+        
+            panel-cover panel-cover--collapsed
+        "  style="background-image: url(/images/background-cover.jpg)" >
+    <div class="panel-main">
+        <div class="panel-main__inner panel-inverted">
+            <div class="panel-main__content"> 
+                <h1 class="panel-cover__title panel-title">
+                    <a href="https://blingsstart.github.io/"  title="link to homepage for xing&#39;s Blog">xing&#39;s Blog</a>
+                </h1>
+                <hr class="panel-cover__divider" />
+                <p class="panel-cover__description">  Learning more~~~  </p>
+                <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                <div class="navigation-wrapper">
+                    <nav class="cover-navigation cover-navigation--primary">
+                        <ul class="navigation">
+                            <li class="navigation__item"><a href="https://blingsstart.github.io#blog" title="link to xing&#39;s Blog blog" class="blog-button">Blog</a> </li></br>
+                            
+                            
+                       </ul>
+                    </nav> <nav class="cover-navigation navigation--social">
+    <ul class="navigation">   
+        
+        <li class="navigation__item">
+            <a href="https://github.com/blingsstart" title="blingsstart on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
+        </li>  </br>   
+        
+        <li class="navigation__item">
+            <a href="mailto:busyxxx@126.com" title="Email busyxxx@126.com"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
+        </li>  </ul>
+</nav>
+ </div>
+            </div>
+        </div>
+        <div class="panel-cover--overlay"></div>
+    </div>
+</header>
+</div>
+<noscript>
+    <style>
+        #scriptHeader {display:none;}
+        .navigation-wrapper{
+            display: block;
+            top: 0;
+        }
+    </style>
+
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content"> 
+                    <h1 class="panel-cover__title panel-title">
+                        <a href="https://blingsstart.github.io/"  title="link to homepage for xing&#39;s Blog">xing&#39;s Blog</a>
+                    </h1>
+                    <hr class="panel-cover__divider" />
+                    <p class="panel-cover__description">  Learning more~~~  </p>
+                    <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                    <div class="navigation-wrapper">
+                        <nav class="cover-navigation cover-navigation--primary">
+                            <ul class="navigation">
+                                <li class="navigation__item"><a href="https://blingsstart.github.io/#blog" title="link to xing&#39;s Blog blog" class="blog-button">Blog</a> </li></br>
+                                
+                                
+                           </ul>
+                        </nav> <nav class="cover-navigation navigation--social">
+    <ul class="navigation">   
+        
+        <li class="navigation__item">
+            <a href="https://github.com/blingsstart" title="blingsstart on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
+        </li>  </br>   
+        
+        <li class="navigation__item">
+            <a href="mailto:busyxxx@126.com" title="Email busyxxx@126.com"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
+        </li>  </ul>
+</nav>
+ </div>
+                </div>
+            </div>
+            <div class="panel-cover--overlay"></div>
+        </div>
+    </header>
+</noscript>
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <div class="post">
+          <h1>Linux下基本软件安装及配置</h1>
+          <span class="post-date">Fri, Dec 13, 2019</span>
+          
+
+<h2 id="linux下的jdk安装">linux下的jdk安装:</h2>
+
+<ol>
+<li>下载linux版本的jdk安装包
+ &gt; - ①下载jdk的压缩包然后解压后配置环境变量。
+        ②下载可执行文件直接运行安装。
+  &gt; - ①将jdk的压缩包上次到linux主机中。
+    ②需要将压缩包远程上传到linux主机中，而linux主机默认支持ftp协议
+        我们只需要在本地电脑主机中安装一个支持ftp协议的客户端即可
+         使用客户端:filezilla/xftp(建议用这个和xshell联合使用)
+        ③解压jdk压缩包。
+        ④配置jdk的环境变量。
+&mdash;</li>
+
+<li><p>Linux系统中安装和配置JDK
+&gt; 1、上传JDK压缩包到linux主机中
+在usr下创建一个目录叫upload(叫什么都可以文件位置自己定)，用来存储上传的jdk压缩包资源。
+2、使用FileZilla软件上传jdk压缩包到usr/bjsxt目录中
+3、在Xshell中使用tar命令将jdk压缩包进行解压。
+4、将解压后的jdk文件复制到usr/local目录下 并重名名为 jdk7
+5、查看/usr/local下是否有jdk7目录资源
+6、配置Jdk的环境变量
+进入etc文件目录，编辑文件profile，在该文件中配置jdk的环境变量。
+进入编辑profile文件的视图中，点击i或insert进入编辑状态
+配置jdk环境变量，配置完成后退出并保存。</p>
+
+<pre><code>（找到这一句，在后面加上如下代码）#export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL
+export JAVA_HOME=/usr/local/jdk7
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+</code></pre>
+
+<p>7、重新加载profile文件（source +文件全路径名）
+8、输入java -version 验证是否配置成功</p></li>
+</ol>
+
+<h2 id="linux下的tomcat服务器安装">linux下的tomcat服务器安装：</h2>
+
+<ol>
+<li>上传tomcat压缩包到/sxt目录下。</li>
+<li>解压tomcat的压缩包</li>
+<li>复制解压后tomcat资源到/usr/local下，并命名为tomcat7</li>
+
+<li><p>在/etc/profile文件中配置tomcat的环境变量（如下），并退出保存</p>
+
+<pre><code>export TOMCAT_HOME=/usr/local/tomcat7
+export CATALINA_HOME=/usr/local/tomcat7
+</code></pre></li>
+
+<li><p>重新加载profile文件</p></li>
+
+<li><p>启动tomcat服务器，并验证tomcat的安装
+在(安装目录)/usr/local/tomcat7/bin目录下执行 startup.sh
+在linux主机本地中打开火狐浏览器输入  localhost:8080/ 回车如果出现tomcat的广告页则安装成功。</p></li>
+
+<li><p>在其他主机中的浏览器访问linux主机中的tomcat服务器。
+&gt; 问题： linux主机的防火墙默认只放行22端口号的请求链接。造成8080请求被阻拦。
+ 解决：
+1、配置linux主机的防火墙放行8080端口号
+2、关闭linux主机的防火墙
+实现：
+1、修改linux主机的防火墙，放行8080 端口号，编辑防火墙配置文件，添加8080端口号放行，退出保存。
+2、重新加载防火墙配置文件
+3、在外部浏览器中访问即可。
+为了初学者的便利使用，可以在安装时不安装防火墙，选择安装最小版linux系统</p>
+
+<h2 id="linux下的mysql安装">linux下的MySQL安装:</h2>
+
+<p>安装和使用:</p></li>
+
+<li><p>检查之前是否安装 mysql，安装过则卸载
+&gt;  rpm -qa | grep -i mysql
+已经安装了库文件，应该先卸载，不然会出现覆盖错误
+注意 卸载时使用了&ndash;nodeps 选项，忽略了依赖关系：
+ rpm -e &ndash;nodeps 程序名称</p>
+
+<ol>
+<li>上传 mysql 的安装文件</li>
+<li>创建 mysql 的安装路径</li>
+<li>解压 mysql</li>
+
+<li><p>添加 mysql 用户组和 mysql 用户，用于设置 mysql 安装目录文件所有 者和所属组</p>
+
+<pre><code>[root@localhost mysql]# groupadd mysql
+[root@localhost mysql]# useradd -r -g mysql mysql
+</code></pre></li>
+
+<li><p>进入 mysql 解压目录，并更改所属的组和用户</p>
+
+<pre><code>[root@localhost mysql-5.6.31-linux-glibc2.5-x86_64]# chown -R mysql .
+[root@localhost mysql-5.6.31-linux-glibc2.5-x86_64]# chgrp -R mysql . 
+</code></pre>
+
+<p><strong><em>注意：不要忘记 mysql 后的 &lsquo;.&rsquo; ,代表所有目录</em></strong></p></li>
+
+<li><p>执行 mysql_install_db 脚本
+对 mysql 中的 data 目录进行初始化并创 建一些系统表格。注意 mysql 服务进程 mysqld 运行时会访问 data 目录，所 以必须由启动 mysqld 进程的用户（就是我们之前设置的 mysql 用户）执行这 个脚本，或者用 root 执行，但是加上参数&ndash;user=mysql</p>
+
+<pre><code>[root@localhost mysql-5.6.31-linux-glibc2.5-x86_64]# scripts/mysql_install_db --user=mysql
+</code></pre></li>
+
+<li><p>将 mysql/目录下除了 data/目录的所有文件，改回 root 用户所有，mysql 用户只需作为 mysql/data/目录下所有文件的所有者</p>
+
+<pre><code>[root@localhost mysql-5.6.31-linux-glibc2.5-x86_64]# chown -R root . [root@localhost mysql-5.6.31-linux-glibc2.5-x86_64]# chown -R mysql data
+</code></pre></li>
+</ol></li>
+</ol>
+
+<p>注意：同样，别忘记 root 后面的 &lsquo;.&rsquo;</p>
+
+<ol>
+<li><p>复制配置文件到 etc 目录下</p>
+
+<pre><code>[root@localhost support-files]# cp my-default.cnf /etc/my.cnf 
+</code></pre></li>
+</ol>
+
+<p>并查看 my.cnf 配置,修改 basedir
+<img src="https://img-blog.csdnimg.cn/2019121216220463.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p>
+
+<ol>
+<li><p>将 mysqld 服务加入开机自启动项</p></li>
+
+<li><p>首先需要将 support-files 目录下的 mysql.server 服务脚本复制到
+        /etc/init.d/，并重命名为 mysqld</p>
+
+<pre><code>[root@localhost support-files]# cp mysql.server /etc/init.d/mysqld
+</code></pre></li>
+
+<li><p>通过 chkconfig 命令将 mysqld 服务加入到自启动服务项中</p>
+
+<pre><code>[root@localhost support-files]# chkconfig --add mysqld
+</code></pre></li>
+</ol>
+
+<p>注意服务名称 mysqld 就是我们将 mysql.server 复制到/etc/init.d/ 时重命名的名称</p>
+
+<ol>
+<li><p>查看是否添加成功</p>
+
+<pre><code>[root@localhost support-files]# chkconfig --list mysqld
+</code></pre></li>
+</ol>
+
+<p>添加成功
+<img src="https://img-blog.csdnimg.cn/20191212162350249.png" alt="" /></p>
+
+<ol>
+<li><p>启动 mysql</p>
+
+<pre><code>[root@localhost etc]# service mysqld start
+</code></pre></li>
+
+<li><p>设置 MySQL 初始密码并登陆</p></li>
+</ol>
+
+<blockquote>
+<p>如果刚安装好 MYSQL，超级用户 root 是没有密码的，直接回车 即可进入到 MYSQL 中. 修改密码 定位到 MYSQL 安装目录/bin 下录入格式：mysqladmin -u 用户名 password 新密码 例如：给 root 设置密码 victor 。键入以下命令： ./mysqladmin -uroot password victor 重新登录</p>
+</blockquote>
+
+<pre><code>[root@localhost etc]# /usr/local/mysql/mysql-5.6.31-linux-glibc2.5-x86_64/bin/mys ql -uroot -p
+</code></pre>
+
+<ol>
+<li>设置环境变量</li>
+</ol>
+
+<p>为了避免每次都输入 mysql 的全路径</p>
+
+<pre><code>/usr/local/mysql/mysql-5.6.31-linux-glibc2.5-x86_64/bin/mys ql
+</code></pre>
+
+<p>可将其加入环境变量中，在/etc/profile 最后加入两行命令：</p>
+
+<pre><code>export MYSQL_HOME=/usr/local/mysql/mysql-5.6.31-linux-glibc2.5- x86_64 export PATH=$PATH:$MYSQL_HOME/bin
+</code></pre>
+
+<p>重新加载环境变量配置文件</p>
+
+<pre><code>source /etc/profile
+</code></pre>
+
+<blockquote>
+<p>linux下的mysql的使用:
+注意:
+①需要关闭linux系统的防火墙或者放行3306端口号
+②MySQL安装成功后默认只支持本地连接，需要配置root账户的远程链接权限。
+mysql开启远程访问权限
+mysql -u root -p
+use mysql；
+GRANT ALL PRIVILEGES ON <em>.</em> TO &lsquo;root&rsquo;@&lsquo;%&rsquo; IDENTIFIED BY &lsquo;123456&rsquo;；   这里的123456为你给新增权限用户设置的密码，%代表所有主机，也可以具体到你的主机ip地址
+flush privileges;   这句表示从mysql数据库的grant表中重新加载权限数据
+select  *  from user；   查询是否设置成功</p>
+</blockquote>
+
+        </div>
+        <div class="sharing">
+<a href="https://twitter.com/intent/tweet?status=Linux%e4%b8%8b%e5%9f%ba%e6%9c%ac%e8%bd%af%e4%bb%b6%e5%ae%89%e8%a3%85%e5%8f%8a%e9%85%8d%e7%bd%ae-https%3a%2f%2fblingsstart.github.io%2fpost%2flinux%25E4%25B8%258B%25E5%259F%25BA%25E6%259C%25AC%25E8%25BD%25AF%25E4%25BB%25B6%25E5%25AE%2589%25E8%25A3%2585%25E5%258F%258A%25E9%2585%258D%25E7%25BD%25AE%2f" target="_blank" title="Follow me on Twitter" class="twitter">
+<span class="fa fa-twitter-square fa-3x"></span></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblingsstart.github.io%2fpost%2flinux%25E4%25B8%258B%25E5%259F%25BA%25E6%259C%25AC%25E8%25BD%25AF%25E4%25BB%25B6%25E5%25AE%2589%25E8%25A3%2585%25E5%258F%258A%25E9%2585%258D%25E7%25BD%25AE%2f" target="_blank" title="Join me on Facebook" class="facebook">
+<span class="fa fa-facebook-square fa-3x"></span></a>
+<a href="https://plus.google.com/share?url=https%3a%2f%2fblingsstart.github.io%2fpost%2flinux%25E4%25B8%258B%25E5%259F%25BA%25E6%259C%25AC%25E8%25BD%25AF%25E4%25BB%25B6%25E5%25AE%2589%25E8%25A3%2585%25E5%258F%258A%25E9%2585%258D%25E7%25BD%25AE%2f" target="_blank" title="Google+" class="googleplus">
+<span class="fa fa-google-plus-square fa-3x"></span></a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblingsstart.github.io%2fpost%2flinux%25E4%25B8%258B%25E5%259F%25BA%25E6%259C%25AC%25E8%25BD%25AF%25E4%25BB%25B6%25E5%25AE%2589%25E8%25A3%2585%25E5%258F%258A%25E9%2585%258D%25E7%25BD%25AE%2f&title=Linux%e4%b8%8b%e5%9f%ba%e6%9c%ac%e8%bd%af%e4%bb%b6%e5%ae%89%e8%a3%85%e5%8f%8a%e9%85%8d%e7%bd%ae" target="_blank" title="LinkedIn" class="linkedin">
+<span class="fa fa-linkedin-square fa-3x"></span></a>
+<a href="http://www.reddit.com/submit?url=https%3a%2f%2fblingsstart.github.io%2fpost%2flinux%25E4%25B8%258B%25E5%259F%25BA%25E6%259C%25AC%25E8%25BD%25AF%25E4%25BB%25B6%25E5%25AE%2589%25E8%25A3%2585%25E5%258F%258A%25E9%2585%258D%25E7%25BD%25AE%2f" target="_blank" title="Reddit" class="reddit"><span class="fa fa-reddit-square fa-3x"></span></a>
+<a href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fblingsstart.github.io%2fpost%2flinux%25E4%25B8%258B%25E5%259F%25BA%25E6%259C%25AC%25E8%25BD%25AF%25E4%25BB%25B6%25E5%25AE%2589%25E8%25A3%2585%25E5%258F%258A%25E9%2585%258D%25E7%25BD%25AE%2f" target="_blank" title="StumbleUpon" class="stumbleupon"><span class="fa fa-stumbleupon fa-3x">
+</span></a>
+</div>
+        
+<section class="post-comments">
+<a class="muut" href="https://muut.com/i/fredrikloch/comments:Linux%e4%b8%8b%e5%9f%ba%e6%9c%ac%e8%bd%af%e4%bb%b6%e5%ae%89%e8%a3%85%e5%8f%8a%e9%85%8d%e7%bd%ae">Comments</a>
+<script src="//cdn.muut.com/1/moot.min.js"></script>
+</section>
+
+
+
+
+      </div>
+    </div>
+
+  </body>
+  
+</html>

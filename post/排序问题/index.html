@@ -115,8 +115,6 @@
           <span class="post-date">Wed, Dec 4, 2019</span>
           
 
-<p><a href="https://blingsstart.github.io">在线预览</a></p>
-
 <h2 id="常见的排序问题">常见的排序问题</h2>
 
 <p>[本篇文章主要介绍入门级别排序]</p>
@@ -221,6 +219,40 @@
 &gt;总结：插入排序其实就是俩俩比较，交换后要<code>从头再来</code>
 &gt;  代码演示：
 &gt;  <img src="https://img-blog.csdnimg.cn/20191204104515767.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTc5NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" /></p></li>
+
+<li><p>简单的桶排序
+&gt; 1. 算法剖析：因为这个排序只涉及一点点的桶排序思想，所以不是很难，首先分桶，根绝给定的数字划分不同范围的桶，给定每个桶一个固定的编号，将桶从大到小进行排列，将数值放到固定桶中，根据桶的标号就可以得出数值排列大小
+&gt; 不跑流程了，直接上代码</p>
+
+<pre><code>		 //简单的桶排序
+    int[] a = {3, 4, 3, 6, 5, 5};
+    //制作桶限制每个桶的范围
+    Map&lt;Integer, Integer&gt; bucket = new HashMap&lt;&gt;();
+    for (int i = 1; i &lt; 11; i++) {
+        bucket.put(i, 0);
+    }
+    //将对应数字存入桶中，key代表数字桶标志，val代表数量
+    for (int i = 0; i &lt; a.length; i++) {
+        if (bucket.containsKey(a[i])) {
+            bucket.put(a[i], bucket.get(a[i]) + 1);
+        }
+    }
+    //遍历取出即可
+    Set&lt;Integer&gt; i = bucket.keySet();
+    Integer t = null;
+    for (Integer s : i) {
+        t = bucket.get(s);
+        if (t != 0) {
+            if (t &gt; 1) {
+                for (int j = 0; j &lt; t; j++) {
+                    System.out.print(s + &quot; &quot;);
+                }
+            } else {
+                System.out.print(s + &quot; &quot;);
+            }
+        }
+    }
+</code></pre></li>
 </ol>
 
 <h5 id="后续还会继续出其他的排序方式敬请期待">后续还会继续出其他的排序方式敬请期待！！</h5>
